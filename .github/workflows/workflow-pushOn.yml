@@ -9,6 +9,7 @@ jobs:
       - name: End first job
         run: echo "end First job"     
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps: 
       - name: Start Second Job
