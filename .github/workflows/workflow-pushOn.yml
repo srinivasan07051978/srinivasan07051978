@@ -4,8 +4,14 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps: 
-      - name: Get code
-        run: echo "print hello"
-      - name: bye bye
-        run: echo "Hello bye"
-        
+      - name: Start First Job
+        run: echo "print First Job"
+      - name: End first job
+        run: echo "end First job"     
+  deploy:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Start Second Job
+        run: echo "print second job"
+      - name: end second job
+        run: echo "end second job
